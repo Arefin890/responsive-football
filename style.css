@@ -71,6 +71,12 @@ nav a {
     padding: 10px 24px;
     background-color:  #E02C6D;
 }
+.banner-details .watch-live:hover {
+    background-color:  orange;
+    border-radius: 25px;
+    transition: 2s;
+}
+
 .banner-details i{
     padding-left: 10px;
 }
@@ -79,6 +85,10 @@ nav a {
 }
 .banner-pic img{
     width: 100%;
+}
+.banner-pic:hover img{
+    transform: scale(1.5) skew(-25deg);
+    transition: transform 3s;
 }
 /* Players Part style */
 
@@ -140,6 +150,17 @@ nav a {
 .highligths .banner-pic{
     margin-right: 100px;
 }
+/* map section */
+.map-section{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.map-section .left-iframe{
+    margin-left: 150px;
+}
+.map-section .right-iframe{
+    margin-left: 50px;
+}
 /* Footer part */
 footer{
     margin-top: 150px;
@@ -167,4 +188,158 @@ footer a{
 }
 footer span{
     font-size: 18px;
+}
+/* Media Queries */
+@media only screen and (max-width:688px) {
+    header{
+        display: none;
+    }
+    /* banner part */
+    .banner-details{
+        margin-left: 35px;
+        margin-top: 0px;
+        margin-right: 7px;
+    }
+    .banner-details h1{
+        font-size: 36px;
+        font-weight: 400;
+        line-height: 54px;
+        margin-top: 40px;
+        margin-bottom: 10px;
+    }
+    .banner-details .watch-live{
+        color: #FFFFFF;
+        padding: 10px 24px;
+        border-radius: 10px;
+    }
+    .banner-pic{
+        margin-right: 0px;
+    }
+    /* Players part  */
+    
+    .players{
+        grid-template-columns: repeat(1, 1fr);
+    } 
+    .player{
+        text-align: center;
+    }
+    /* Highlights part style */
+.highligths{
+    margin-top: 165px;
+}
+.highligths h1{
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 32px;
+    margin-top: 18px;
+}
+.highligths p{
+    line-height: 20px;
+    margin-bottom: 20px;
+}
+.highligths .watch-live {
+    padding: 5px 10px;
+    border-radius: 6px;
+}
+.highligths .banner-pic{
+    margin-top: 50px;
+    margin-left: 30px;
+    margin-right: 23px;
+}
+/* map section */
+
+.map-section .left-iframe{
+    margin-left: 10px;
+    width: 300px;
+}
+.map-section .right-iframe{
+    margin-left: 20px;
+    width: 300px;
+}
+
+}
+
+
+  /* Tablet view */
+  
+@media only screen and (min-width:688px) and (max-width:992px){
+
+    /* Navigation part style */
+    header{
+        display: none;
+    }
+    
+    /* banner part style */
+    
+    .banner-part{
+        padding-top: 45px;
+        padding-bottom: 45px;
+    }
+    
+    .banner-details{
+        margin-left: 80px;
+        margin-top: 35px;
+        margin-right: 30px;
+    }
+    .banner-details h1{
+        font-size: 40px;
+        font-weight: 500;
+        line-height: 43px;
+        margin-bottom: 15px;
+    }
+    .banner-details .watch-live{
+        padding: 5px 15px;
+        border-radius: 5px;
+    }
+    .banner-pic{
+        margin-right: 20px;
+    }
+    /* Players Part style */
+    
+    .players{
+        grid-template-columns: repeat(2, 1fr);
+        grid-column-gap: 20px;
+        grid-row-gap: 30px
+    } 
+    .player{
+        width: 315px;
+    }
+    
+    /* Highlights part style */
+
+    .highligths{
+        margin-top: 100px;
+    }
+    .highligths .container{
+        display: block;
+    }
+    .highligths .banner-details{
+        padding-bottom: 50px;
+        margin: auto;
+    }
+    .highligths h1{
+        font-size: 35px;
+    }
+    .highligths .banner-pic{
+        margin-top: 65px;
+        margin: auto;
+    }
+    /* Footer part */
+    footer{
+        margin-top: 60px;
+    }
+    /* map section */
+.map-section{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.map-section .left-iframe{
+    margin-left: 30px;
+    width: 350px;
+}
+.map-section .right-iframe{
+    margin-left: 30px;
+    width: 350px;
+}
+    
 }
